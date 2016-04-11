@@ -1,0 +1,137 @@
+.navbar {
+	border-radius: 0;
+	border: none;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	z-index: 10;
+	background-color: white;
+	.navbar-brand {
+	    padding: 7px 0 2px;
+	    img {
+	    	height: 40px;
+	    }
+	}
+	&.navbar-transparent {
+		background-color: transparent;
+		li > a{
+			color: white
+		}
+		.dropdown-menu a{
+			color: #2d2d2d;
+		}
+	}
+}
+.login-page, .index-page {
+	background-color: #99A1F4;
+}
+.login-ct {
+	.big-logo {
+		display: block;
+		margin: 150px auto 50px;
+		width: 135px;
+	}
+	.submit {
+		margin-top: 30px;
+	}
+	.forget {
+		text-align: center;
+		color: blue;
+		text-decoration: none;
+		display: block;
+		margin-top: 30px;
+		font-size: 12px;
+	}
+}
+.index-page {
+	.index-ct {
+		.big-logo {
+			display: block;
+			margin: 150px auto 50px;
+			width: 135px;
+		}
+		.desktop-img {
+			display: block;
+			margin: 50px auto 0;
+			width: 730px;
+		}
+	}
+}
+
+.index-page-detail {
+	background-color: #F0F0F0;
+	.index-ct {
+		padding-top: 100px;
+		.tabs {
+		    list-style: none;
+		    text-align: center;
+		    margin: auto;
+		    width: 637px;
+		    padding: 0;
+		    border-bottom: solid 1px #3f51b5;
+			li {
+				list-style: none;
+				display: inline-block;
+			    font-size: 25px;
+    			margin-bottom: -1px;
+    			&.active {
+				    border: solid 1px #3f51b5;
+    			}
+				a {
+					color: #3f51b5;
+				    text-decoration: none;
+    				padding: 8px 25px;
+					display: block;
+				}
+			}
+		}
+		.filter {
+			list-style: none;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			overflow: auto;
+			padding: 0;
+			li {
+				list-style: none;
+				font-size: 14px;
+				float: left;
+				padding: 0 10px;
+				line-height: 22px;
+				&.active {
+					font-weight: bold;
+					font-size: 18px;
+				}
+				a {
+					color: #3f51b5;
+					text-decoration: none;
+				}
+			}
+		}
+		.card {
+			margin-bottom: 20px;
+
+			.title {
+			    height: 80px;
+			    line-height: 28px;
+			    text-align: center;
+			    width: 5000px;
+			    color: #fff;
+			    background-color: #6A76BB;
+			    font-size: 16px;
+			    font-weight: 700;
+			    display: table-cell;
+			    padding: 0 20px;
+			    vertical-align: middle;			
+			}
+			.footer {
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background-color: white;
+				a {
+					padding: 15px 40px;
+				}
+			}
+		}
+	}
+}
