@@ -128,3 +128,72 @@
 .index-page-detail .index-ct .card .footer a {
   padding: 15px 40px;
 }
+.book-page {
+  background-color: #f0f0f0;
+}
+.book-page .book-ct {
+  padding-top: 60px;
+}
+.book-page .book-ct .breadcrumb {
+  padding: 0;
+  background: none;
+  margin-top: 25px;
+}
+.book-page .book-ct .breadcrumb a,
+.book-page .book-ct .breadcrumb li {
+  color: #2d2d2d;
+}
+.book-page .book-ct h1 {
+  font-size: 28px;
+  margin: 25px 0;
+}
+.book-page .book-ct .book-row {
+  padding: 15px 0;
+  border-bottom: solid 1px #dcdcdc;
+}
+.book-page .book-ct .book-row:last-child {
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+.book-page .book-ct .net-row {
+  padding: 15px 0;
+  border-bottom: solid 1px #dcdcdc;
+}
+.book-page .book-ct .net-row h4 {
+  text-align: center;
+  margin: 20px;
+}
+.book-page .book-ct .net-row p {
+  margin: 0;
+}
+.book-page .book-ct .net-row:last-child {
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+.book-page .book-ct .media-body ul {
+  list-style: none;
+  padding: 0;
+}
+.book-page .book-ct .media-body ul li {
+  list-style: none;
+  padding: 15px 0 0;
+}
+.book-page .book-ct .contact {
+  border-left: solid 1px #DCDCDC;
+  padding: 1px;
+}
+.book-page .book-ct .contact .checkout {
+  display: block;
+  margin: 58px auto;
+}
+.book-page .book-ct .contact .details {
+  display: none;
+}
+.book-page .book-ct .contact .details ul {
+  list-style: none;
+  padding: 0;
+}
+.book-page .book-ct .contact .details ul li {
+  list-style: none;
+  padding: 10px 0px 0px 10px;
+}
