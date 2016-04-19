@@ -42,6 +42,11 @@
   margin-top: 30px;
   font-size: 12px;
 }
+.login-ct .intro-title {
+  margin: 150px auto 50px;
+  text-align: center;
+  color: white;
+}
 .index-page .index-ct .big-logo {
   display: block;
   margin: 150px auto 50px;
@@ -128,20 +133,20 @@
 .index-page-detail .index-ct .card .footer a {
   padding: 15px 40px;
 }
+.breadcrumb {
+  padding: 0;
+  background: none;
+  margin-top: 25px;
+}
+.breadcrumb a,
+.breadcrumb li {
+  color: #2d2d2d;
+}
 .book-page {
   background-color: #f0f0f0;
 }
 .book-page .book-ct {
   padding-top: 60px;
-}
-.book-page .book-ct .breadcrumb {
-  padding: 0;
-  background: none;
-  margin-top: 25px;
-}
-.book-page .book-ct .breadcrumb a,
-.book-page .book-ct .breadcrumb li {
-  color: #2d2d2d;
 }
 .book-page .book-ct h1 {
   font-size: 28px;
@@ -196,4 +201,17 @@
 .book-page .book-ct .contact .details ul li {
   list-style: none;
   padding: 10px 0px 0px 10px;
+}
+.post-page .post-ct {
+  padding-top: 50px;
+}
+.post-page .post-ct .input-group {
+  margin: 20px 0;
+}
+.post-page .post-ct .qr-ct {
+  text-align: center;
+}
+.post-page .post-ct .qr-ct .qrcode {
+  display: block;
+  margin: 30px auto;
 }
