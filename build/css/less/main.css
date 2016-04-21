@@ -1,10 +1,6 @@
 .navbar {
   border-radius: 0;
   border: none;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  z-index: 10;
   background-color: white;
 }
 .navbar .navbar-brand {
@@ -59,9 +55,6 @@
 }
 .index-page-detail {
   background-color: #F0F0F0;
-}
-.index-page-detail .index-ct {
-  padding-top: 100px;
 }
 .index-page-detail .index-ct .tabs {
   list-style: none;
@@ -145,65 +138,63 @@
 .book-page {
   background-color: #f0f0f0;
 }
-.book-page .book-ct {
-  padding-top: 60px;
-}
-.book-page .book-ct h1 {
+.book-ct h1 {
   font-size: 28px;
   margin: 25px 0;
 }
-.book-page .book-ct .book-row {
+.book-ct .book-row {
   padding: 15px 0;
   border-bottom: solid 1px #dcdcdc;
 }
-.book-page .book-ct .book-row:last-child {
+.book-ct .book-row:last-child {
   margin-bottom: 0px;
   border-bottom: none;
 }
-.book-page .book-ct .net-row {
+.book-ct .net-row {
   padding: 15px 0;
   border-bottom: solid 1px #dcdcdc;
 }
-.book-page .book-ct .net-row h4 {
+.book-ct .net-row h4 {
   text-align: center;
   margin: 20px;
 }
-.book-page .book-ct .net-row p {
+.book-ct .net-row p {
   margin: 0;
 }
-.book-page .book-ct .net-row:last-child {
+.book-ct .net-row:last-child {
   margin-bottom: 0px;
   border-bottom: none;
 }
-.book-page .book-ct .media-body ul {
+.book-ct .media-body ul {
   list-style: none;
   padding: 0;
 }
-.book-page .book-ct .media-body ul li {
+.book-ct .media-body ul li {
   list-style: none;
   padding: 15px 0 0;
 }
-.book-page .book-ct .contact {
-  border-left: solid 1px #DCDCDC;
+.book-ct .contact {
   padding: 1px;
 }
-.book-page .book-ct .contact .checkout {
+@media (min-width: 768px) {
+  .book-ct .contact {
+    border-left: solid 1px #DCDCDC;
+  }
+}
+.book-ct .contact .checkout {
   display: block;
   margin: 58px auto;
 }
-.book-page .book-ct .contact .details {
+.book-ct .contact .details {
   display: none;
 }
-.book-page .book-ct .contact .details ul {
+.book-ct .contact .details ul {
   list-style: none;
   padding: 0;
 }
-.book-page .book-ct .contact .details ul li {
+.book-ct .contact .details ul li {
   list-style: none;
   padding: 10px 0px 0px 10px;
-}
-.post-page .post-ct {
-  padding-top: 50px;
 }
 .post-page .post-ct .input-group {
   margin: 20px 0;
@@ -214,4 +205,14 @@
 .post-page .post-ct .qr-ct .qrcode {
   display: block;
   margin: 30px auto;
+}
+.manage-page .net-books {
+  display: none;
+}
+.manage-page .selector {
+  margin-bottom: 20px;
+}
+.manage-page .delete {
+  padding: 13px 0;
+  text-align: center;
 }

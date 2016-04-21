@@ -1,10 +1,6 @@
 .navbar {
 	border-radius: 0;
 	border: none;
-	position: fixed;
-	width: 100%;
-	left: 0;
-	z-index: 10;
 	background-color: white;
 	.navbar-brand {
 	    padding: 7px 0 2px;
@@ -66,7 +62,6 @@
 .index-page-detail {
 	background-color: #F0F0F0;
 	.index-ct {
-		padding-top: 100px;
 		.tabs {
 		    list-style: none;
 		    text-align: center;
@@ -150,71 +145,71 @@
 }
 .book-page {
 	background-color: #f0f0f0;
-	.book-ct {
-		padding-top: 60px;
-		
-		h1 {
-			font-size: 28px;
-			margin: 25px 0;
+}
+.book-ct {
+	
+	h1 {
+		font-size: 28px;
+		margin: 25px 0;
+	}
+	.book-row {
+		padding: 15px 0;
+		border-bottom: solid 1px #dcdcdc;
+		&:last-child {
+			margin-bottom: 0px;
+			border-bottom: none;				
 		}
-		.book-row {
-			padding: 15px 0;
-			border-bottom: solid 1px #dcdcdc;
-			&:last-child {
-				margin-bottom: 0px;
-				border-bottom: none;				
+	}
+	.net-row {
+		h4 {
+		    text-align: center;
+		    margin: 20px;
+		}
+		p {
+			margin: 0;
+		}
+		padding: 15px 0;
+		border-bottom: solid 1px #dcdcdc;
+		&:last-child {
+			margin-bottom: 0px;
+			border-bottom: none;				
+		}
+	}
+	.media-body {
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				list-style: none;
+				padding: 15px 0 0;
 			}
 		}
-		.net-row {
-			h4 {
-			    text-align: center;
-			    margin: 20px;
-			}
-			p {
-				margin: 0;
-			}
-			padding: 15px 0;
-			border-bottom: solid 1px #dcdcdc;
-			&:last-child {
-				margin-bottom: 0px;
-				border-bottom: none;				
-			}
+	}
+	.contact {
+		@media (min-width: 768px) {
+			border-left: solid 1px #DCDCDC;
 		}
-		.media-body {
+		padding: 1px;
+		.checkout {
+	    	display: block;
+			margin: 58px auto;
+		}
+		.details {
+			display: none;
 			ul {
 				list-style: none;
 				padding: 0;
 				li {
 					list-style: none;
-					padding: 15px 0 0;
+					padding: 10px 0px 0px 10px;
 				}
 			}
 		}
-		.contact {
-			border-left: solid 1px #DCDCDC;
-			padding: 1px;
-			.checkout {
-		    	display: block;
-				margin: 58px auto;
-			}
-			.details {
-				display: none;
-				ul {
-					list-style: none;
-					padding: 0;
-					li {
-						list-style: none;
-						padding: 10px 0px 0px 10px;
-					}
-				}
-			}
 
-		}
 	}
 }
 .post-page {
 	.post-ct {
-		padding-top: 50px;
 		.input-group {
 		    margin: 20px 0;
 		}
@@ -225,5 +220,17 @@
 			}
 			text-align: center;
 		}
+	}
+}
+.manage-page {
+	.net-books {
+		display: none;
+	}
+	.selector {
+		margin-bottom: 20px;
+	}
+	.delete {
+		padding: 13px 0;
+    	text-align: center;
 	}
 }
