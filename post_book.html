@@ -59,43 +59,48 @@
       <li><a href="#">发布课本</a></li>
     </ol>
 
-    <div class="row">
-      <div class="col-sm-4 col-sm-offset-4">
-        <form method="POST" target="" id="J_post_book">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">专业</span>
-            <input name="major" type="text" class="form-control" placeholder="专业" aria-describedby="basic-addon1">
+    <form method="POST" target="" id="J_post_book">
+      <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+                <p><input id="select_isbn" type="radio" value="isbn" checked="checked" name="type"> 通过ISBN号获取书籍信息</p>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">ISBN号</span>
+                  <input name="ISBN" type="text" class="form-control" placeholder="ISBN号" aria-describedby="basic-addon1">
+                </div>
+                <hr>
           </div>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon2">课程</span>
-            <input name="class" type="text" class="form-control" placeholder="课程" aria-describedby="basic-addon2">
-          </div>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">课本名</span>
-            <input name="sourcename" type="text" class="form-control" placeholder="课本名" aria-describedby="basic-addon3">
-          </div>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon4">出版社</span>
-            <input name="sourcepublisher" type="text" class="form-control" placeholder="课本名" aria-describedby="basic-addon4 ">
-          </div>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon5">作者</span>
-            <input name="sourceauthor" type="text" class="form-control" placeholder="作者" aria-describedby="basic-addon5 ">
-          </div>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon6">封面</span>
-            <input name="sourceimage" type="file" class="form-control" aria-describedby="basic-addon6 ">
-          </div>
-          <input class="btn btn-block btn-primary" type="submit" value="提交"/>
-        </form>
       </div>
-      <div class="col-sm-4">
-      	<div class="qr-ct">
-      		<img class="qrcode" src="http://s.jiathis.com/qrcode.php?url=http%3A%2F%2Fcloud.insta360.com%2Fpost%2Fb56a573a9faaa4d62af55c50a883a36b%3Fm%3Dtrue">
-      		<p>扫码二维码，关注公众号，智能添加图书！</p>
-      	</div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <p><input id="select_normal" type="radio" value="normal" name="type"> 手动输入书籍信息</p>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">专业</span>
+              <input name="major" type="text" class="form-control" disabled="disabled" placeholder="专业" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon2">课程</span>
+              <input name="class" type="text" class="form-control" disabled="disabled" placeholder="课程" aria-describedby="basic-addon2">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon3">课本名</span>
+              <input name="sourcename" type="text" class="form-control" disabled="disabled" placeholder="课本名" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon4">出版社</span>
+              <input name="sourcepublisher" type="text" class="form-control" disabled="disabled" placeholder="课本名" aria-describedby="basic-addon4 ">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon5">作者</span>
+              <input name="sourceauthor" type="text" class="form-control" disabled="disabled" placeholder="作者" aria-describedby="basic-addon5 ">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon6">封面</span>
+              <input name="sourceimage" type="file" class="form-control" disabled="disabled" aria-describedby="basic-addon6 ">
+            </div>
+            <input class="btn btn-block btn-primary" type="submit" value="提交"/>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
 
   <script src="//cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>

@@ -16,5 +16,10 @@ $(function() {
 		$('.books').hide();
 		$('.net-books').show();
 	})
+	$('input:radio[name="type"]').on('change', function() {
+		console.log($('#J_post_book').serialize());
 
+		$('#J_post_book .form-control').attr('disabled', 'disabled');
+		$(this).parents('.row').find('.form-control').removeAttr('disabled');
+	});
 });
